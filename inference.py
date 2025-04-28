@@ -9,7 +9,7 @@ load_dotenv()
 client=OpenAI(
     api_key= os.getenv("OPENAI_KEY"),
 )
-job = client.fine_tuning.jobs.retrieve("ftjob-EMDDWll6dMUFGfAV6Jte7SFc")
+job = client.fine_tuning.jobs.retrieve("ftjob-********")
 print(job.status)
 print(job.fine_tuned_model)  
 response = client.chat.completions.create(
