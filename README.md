@@ -62,7 +62,8 @@ response = client.chat.completions.create(
     model=job.fine_tuned_model,
     messages=[{"role": "user", "content": "kya tu train se aaya?"},
               {"role": "user", "content": "kya tumne woh news dekhi?"},
-              {"role": "user", "content": "weekend ka plan ban gaya?"},]
+              {"role": "user", "content": "weekend ka plan ban gaya?"},
+              {"role": "user", "content": "Sunday ko kya plan hai?"},]
 )
 
 ```
