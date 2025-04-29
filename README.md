@@ -76,7 +76,7 @@ Mujhe Sunday ko kuch special plan nahi hai, bas relax karne ka socha hai. Tumhar
 
 ```
 ## Dataset, Model, Hyperparameter and Prompt choice
-**Dataset Selection**
+**📚 Dataset Selection**
 1. Quality: 
 
 The effectiveness of fine-tuning largely depends on the quality of your dataset. Ensure that your data is clean, relevant, and representative of the tasks you want the model to perform.
@@ -89,7 +89,7 @@ The effectiveness of fine-tuning largely depends on the quality of your dataset.
 
 -Large-scale Fine-tuning: For more complex tasks, consider using thousands of examples. 
 
-**Model Selection**
+**⚙️ Model Selection**
 
 The GPT-3.5-turbo model is often the ideal choice for most users due to its balance of several key factors:
 
@@ -100,7 +100,7 @@ The GPT-3.5-turbo model is often the ideal choice for most users due to its bala
 5. Lower token limits: It can handle reasonable context windows (typically 4K-16K tokens) suitable for most everyday tasks without needing the extended context capabilities of larger models.
 6. Broad language support: While not as sophisticated as GPT-4 in handling complex multilingual tasks, it's still capable of working with many languages adequately.
 
-**Hyperparameter selection**
+**⚙️ Hyperparameter selection**
 1. n_epochs
 Increase epochs if the model doesn't follow training data closely.
 Decrease epochs if the model becomes less diverse.
@@ -115,7 +115,7 @@ Decrease epochs if the model becomes less diverse.
 2. Preserves more of the original model's knowledge
 3. May require more epochs to achieve desired results
 
-**Prompt Selection**
+**✍️ Prompt Selection**
 1. The conversational chat format is essential for fine-tuning gpt-3.5-turbo.
 2. Role-based structure: Each example must include messages with specific roles:
 system: Optional context setting message (appears at the start)
@@ -128,7 +128,7 @@ assistant: Messages the model should learn to generate
 ```json
 {"messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "Hello!"}, {"role": "assistant", "content": "Hi there! How can I help you today?"}]}
 ```
-## Evaluating quality in production
+## ✅ Evaluating quality in production
 1. Human review: Regularly assess the model's outputs to ensure they meet quality standards. This can involve manual review of responses to check for relevance, accuracy, and appropriateness.
 2. Evaluation metrics:
  Implement custom task-specific metrics to quantitatively assess model performance.
