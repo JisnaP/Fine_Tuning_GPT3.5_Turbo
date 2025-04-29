@@ -77,15 +77,19 @@ Mujhe Sunday ko kuch special plan nahi hai, bas relax karne ka socha hai. Tumhar
 ```
 ## Dataset, Model, Hyperparameter and Prompt choice
 **Dataset Selection**
-1. Quality
+1. Quality: 
+
 The effectiveness of fine-tuning largely depends on the quality of your dataset. Ensure that your data is clean, relevant, and representative of the tasks you want the model to perform.
-2. Dataset size
-Minimum: OpenAI requires at least 10 examples to fine-tune a model.
+2. Dataset size:
 
-Optimal: For meaningful improvements, it's recommended to use 50 to 100 well-crafted training examples.
+-Minimum: OpenAI requires at least 10 examples to fine-tune a model.
 
-Large-scale Fine-tuning: For more complex tasks, consider using thousands of examples. 
+-Optimal: For meaningful improvements, it's recommended to use 50 to 100 well-crafted training examples.
+
+-Large-scale Fine-tuning: For more complex tasks, consider using thousands of examples. 
+
 **Model Selection**
+
 The GPT-3.5-turbo model is often the ideal choice for most users due to its balance of several key factors:
 
 1. Cost-effectiveness: It's significantly less expensive than larger models like GPT-4, making it accessible for projects with budget constraints.
