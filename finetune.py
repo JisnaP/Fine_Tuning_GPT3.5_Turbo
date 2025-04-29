@@ -2,6 +2,8 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 load_dotenv()
+if "SSL_CERT_FILE" in os.environ:
+    del os.environ["SSL_CERT_FILE"]
 # Set openai API key
 client=OpenAI(
     api_key= os.getenv("OPENAI_KEY"),
@@ -20,7 +22,7 @@ fine_tune_response = client.fine_tuning.jobs.create(
     model="gpt-3.5-turbo",
     hyperparameters={
          "n_epochs":4,
-         "learning_rate_multiplier":0.05}
+         "learning_rate_multiplier":2}
 )
 print(fine_tune_response)
 print(f"Fine-tune job started: {fine_tune_response.id}")
