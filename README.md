@@ -6,7 +6,9 @@ This project demonstrates how to fine-tune GPT-3.5 Turbo to better understand an
 ## Prerequisites
 
 Python 3.10
+
 OpenAI API key with fine-tuning access
+
 Training dataset in JSONL format
 
 ## Installation
