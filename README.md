@@ -104,6 +104,7 @@ The GPT-3.5-turbo model is often the ideal choice for most users due to its bala
 1. n_epochs:
 
 Increase epochs if the model doesn't follow training data closely.
+
 Decrease epochs if the model becomes less diverse.
 
 2. Learning rate multiplier
@@ -122,6 +123,7 @@ Decrease epochs if the model becomes less diverse.
 3. May require more epochs to achieve desired results
 
 **✍️ Prompt Selection**
+
 1. The conversational chat format is essential for fine-tuning gpt-3.5-turbo.
 2. Role-based structure: Each example must include messages with specific roles:
 system: Optional context setting message (appears at the start)
@@ -134,10 +136,15 @@ assistant: Messages the model should learn to generate
 ```json
 {"messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "Hello!"}, {"role": "assistant", "content": "Hi there! How can I help you today?"}]}
 ```
+
 ## ✅ Evaluating quality in production
+
 1. Human review: Regularly assess the model's outputs to ensure they meet quality standards. This can involve manual review of responses to check for relevance, accuracy, and appropriateness.
+
 2. Evaluation metrics:
+
  Implement custom task-specific metrics to quantitatively assess model performance.
+
  1. Code-Switching Accuracy: Measure how accurately the model switches between Hindi and English in contextually appropriate ways
  2. Transliteration Consistency: Evaluate consistency in Hindi transliteration to Roman script
  Count inconsistencies in spelling of the same Hindi words across responses.
@@ -145,8 +152,12 @@ assistant: Messages the model should learn to generate
  Manual scoring on a scale (1-5) for relevance.
  Can be automated with embedding similarity measurement.
  4. Automatic metrics where possible (BLEU/ROUGE, embedding similarity).
+
 3. Feedback Loops: Incorporate user feedback to continuously refine and improve the model. This can involve collecting user ratings or comments on model outputs.
+
 4. Safety Checks: Ensure that the model's outputs adhere to safety and ethical guidelines. Implement content filters and moderation tools as necessary.
-License
+
+
+## License
 MIT License
 
