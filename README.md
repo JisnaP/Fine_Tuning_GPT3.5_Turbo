@@ -122,6 +122,7 @@ Decrease epochs if the model becomes less diverse.
 2. Preserves more of the original model's knowledge
 3. May require more epochs to achieve desired results
 
+
 **✍️ Prompt Selection**
 
 1. The conversational chat format is essential for fine-tuning gpt-3.5-turbo.
@@ -136,6 +137,8 @@ assistant: Messages the model should learn to generate
 ```json
 {"messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "Hello!"}, {"role": "assistant", "content": "Hi there! How can I help you today?"}]}
 ```
+**Temperature settings selected :0.2**
+
 
 ## ✅ Evaluating quality in production
 
