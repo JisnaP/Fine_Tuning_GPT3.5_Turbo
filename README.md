@@ -145,13 +145,13 @@ assistant: Messages the model should learn to generate
 
  Implement custom task-specific metrics to quantitatively assess model performance.
 
-  1. Code-Switching Accuracy: Measure how accurately the model switches between Hindi and English in contextually appropriate ways
-  2. Transliteration Consistency: Evaluate consistency in Hindi transliteration to Roman script
-  Count inconsistencies in spelling of the same Hindi words across responses.
-  3. Response Relevance: Evaluate if responses directly address the user's query.
-  Manual scoring on a scale (1-5) for relevance.
-  Can be automated with embedding similarity measurement.
-  4. Automatic metrics where possible (BLEU/ROUGE, embedding similarity).
+   - Code-Switching Accuracy: Measure how accurately the model switches between Hindi and English in   contextually appropriate ways.
+   - Transliteration Consistency: Evaluate consistency in Hindi transliteration to Roman script
+     Count inconsistencies in spelling of the same Hindi words across responses**
+   - Response Relevance: Evaluate if responses directly address the user's query.
+     Manual scoring on a scale (1-5) for relevance.
+     Can be automated with embedding similarity measurement.
+   - Automatic metrics where possible (BLEU/ROUGE, embedding similarity).
 
 3. Feedback Loops: Incorporate user feedback to continuously refine and improve the model. This can involve collecting user ratings or comments on model outputs.
 
