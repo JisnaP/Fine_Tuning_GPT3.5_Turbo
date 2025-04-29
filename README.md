@@ -75,7 +75,7 @@ Haan, ek movie dekhne aur friends ke saath dinner plan kiya hai. Tumhara kya pla
 Mujhe Sunday ko kuch special plan nahi hai, bas relax karne ka socha hai. Tumhara kya plan hai?
 
 ```
-## Dataset Model Hyperparameter Prompt choice
+## Dataset, Model, Hyperparameter and Prompt choice
 **Dataset Selection**
 1. Quality
 The effectiveness of fine-tuning largely depends on the quality of your dataset. Ensure that your data is clean, relevant, and representative of the tasks you want the model to perform.
