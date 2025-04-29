@@ -80,6 +80,7 @@ Mujhe Sunday ko kuch special plan nahi hai, bas relax karne ka socha hai. Tumhar
 1. Quality: 
 
 The effectiveness of fine-tuning largely depends on the quality of your dataset. Ensure that your data is clean, relevant, and representative of the tasks you want the model to perform.
+
 2. Dataset size:
 
 -Minimum: OpenAI requires at least 10 examples to fine-tune a model.
