@@ -141,9 +141,7 @@ assistant: Messages the model should learn to generate
 
 1. Human review: Regularly assess the model's outputs to ensure they meet quality standards. This can involve manual review of responses to check for relevance, accuracy, and appropriateness.
 
-2. Evaluation metrics:
-
- Implement custom task-specific metrics to quantitatively assess model performance.
+2. Evaluation metrics: Implement custom task-specific metrics to quantitatively assess model performance.
 
    - Code-Switching Accuracy: Measure how accurately the model switches between Hindi and English in   contextually appropriate ways.
    - Transliteration Consistency: Evaluate consistency in Hindi transliteration to Roman script
