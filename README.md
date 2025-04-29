@@ -101,16 +101,22 @@ The GPT-3.5-turbo model is often the ideal choice for most users due to its bala
 6. Broad language support: While not as sophisticated as GPT-4 in handling complex multilingual tasks, it's still capable of working with many languages adequately.
 
 **⚙️ Hyperparameter selection**
-1. n_epochs
+1. n_epochs:
+
 Increase epochs if the model doesn't follow training data closely.
 Decrease epochs if the model becomes less diverse.
+
 2. Learning rate multiplier
+
 -Higher values ( 2.0-3.0):
+
 1. More aggressive learning from your dataset
 2. Model adapts more quickly to your examples
 3. Risk of overfitting, especially with small datasets
 4. May lose some general knowledge if set too high
+
 -Lower values ( 0.5-0.8):
+
 1. More conservative learning
 2. Preserves more of the original model's knowledge
 3. May require more epochs to achieve desired results
